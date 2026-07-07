@@ -256,13 +256,13 @@ it only under `if __name__ == "__main__"`. What is `__name__` set to when the
 file is run directly? What is it set to when the file is *imported* by another
 module — and why does this distinction matter?
 
-> *Your answer:*
+> *Your answer:*When the file is run directly, __name__ is set to "__main__". When the file is imported as a module, __name__ is set to the module's name. This prevents the main() function from running automatically when the module is imported.
 
 **Question 3.2:** The `kreisflaeche` function could be defined without
 importing `math` by hard-coding `3.14159` instead of `math.pi`. Give one
 concrete reason why using `math.pi` is preferable.
 
-> *Your answer:*
+> *Your answer:*math.pi is more accurate than a hard-coded value such as 3.14159, making calculations more precise and easier to maintain.
 
 ---
 
@@ -422,7 +422,8 @@ uv --version
 
 > **Screenshot 4:** Take a screenshot showing the `uv --version` output.
 >
-> `[insert screenshot]`
+> `[insert screenshot]`<img width="1472" height="765" alt="image" src="https://github.com/user-attachments/assets/191536f5-1edf-4f85-9bb2-2acb59655edc" />
+
 
 ---
 
@@ -498,7 +499,9 @@ uv run python3 berechnung.py
 > **Screenshot 5:** Take a screenshot showing the colourful table output
 > from `uv run`.
 >
-> `[insert screenshot]`
+> `[insert screenshot]`<img width="1116" height="272" alt="image" src="https://github.com/user-attachments/assets/9b5e6b0b-4466-42b8-8af0-0ca443c7c178" />
+
+
 
 ### Step 5 – Commit
 
@@ -515,13 +518,13 @@ git push
 `uv.lock` be committed to version control while generated files like `.venv/`
 should not?
 
-> *Your answer:*
+> *Your answer:*pyproject.toml defines the project's dependencies and configuration, while uv.lock stores the exact versions of all installed dependencies. The uv.lock file should be committed so everyone uses the same package versions. The .venv directory should not be committed because it is generated automatically and is specific to the local system.
 
 **Question 4.2:** `uv run python3 berechnung.py` uses the virtual
 environment's Python. What would happen if you ran `python3 berechnung.py`
 directly (without `uv run`) and `rich` is not installed system-wide?
 
-> *Your answer:*
+> *Your answer:*Running python3 berechnung.py directly would use the system Python. Since rich is not installed system-wide, the program would fail with ModuleNotFoundError: No module named 'rich'.
 
 ---
 
