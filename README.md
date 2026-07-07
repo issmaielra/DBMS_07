@@ -58,7 +58,8 @@ pg_isready
 
 > **Screenshot 1:** Take a screenshot showing all three version/status checks.
 >
-> `[insert screenshot]`
+> `[insert screenshot]`<img width="1485" height="752" alt="image" src="https://github.com/user-attachments/assets/77c3284b-37b0-46dc-a466-93978a18a3ce" />
+
 
 ---
 
@@ -111,19 +112,20 @@ Exit the REPL:
 > **Screenshot 2:** Take a screenshot showing all REPL interactions above,
 > including the f-string output.
 >
-> `[insert screenshot]`
+> `[insert screenshot]`<img width="1207" height="542" alt="image" src="https://github.com/user-attachments/assets/9ebb6d75-14ee-4e8b-9a4b-d3f3558cb9b0" />
+
 
 ### Questions for Section 1
 
 **Question 1.1:** In the REPL, typing `2 ** 10` without `print` still shows
 `1024`. Why does this work in the REPL but *not* in a script file?
 
-> *Your answer:*
+> *Your answer:*In the REPL, the result of an expression is displayed automatically. In a Python script, expressions are not printed automatically, so print() must be used to display the result.
 
 **Question 1.2:** The f-string format specifier `:.2f` controls how `price`
 is displayed. What does it mean, and what would `:.4f` produce for `18.9`?
 
-> *Your answer:*
+> *Your answer:*:.2f formats a floating-point number with exactly two digits after the decimal point. :.4f would display 18.9 as 18.9000.
 
 ---
 
@@ -167,13 +169,15 @@ Exit the REPL:
 can write `sqrt(144)` without the `math.` prefix. What is the drawback of
 this style compared to `import math`?
 
-> *Your answer:*
+> *Your answer:*The drawback is that imported names can conflict with other functions or variables, making the code less clear. Using import math keeps the namespace explicit.
 
 **Question 2.2:** The standard library is always available — it requires no
 installation. Name two other standard library modules (not `math`) and
 describe in one sentence what each one is used for.
 
-> *Your answer:*
+> *Your answer:*os – provides functions for interacting with the operating system and files.
+
+random – generates random numbers and selects random values.
 
 ---
 
@@ -234,7 +238,8 @@ python3 berechnung.py
 > **Screenshot 3:** Take a screenshot showing the terminal output of
 > `python3 berechnung.py`.
 >
-> `[insert screenshot]`
+> `[insert screenshot]`<img width="1470" height="756" alt="image" src="https://github.com/user-attachments/assets/2d3a97e3-aa05-4f21-93ef-81301f83fc33" />
+
 
 ### Step 4 – Commit
 
